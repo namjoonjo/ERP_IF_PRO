@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{D4E5F6A7-B8C9-0123-DEFA-234567890123}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>area_L</RootNamespace>
+    <AssemblyName>REG_IN_ITEM</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE;REG_IN_ITEM_DLL</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE;REG_IN_ITEM_DLL</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <!-- System References -->
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Microsoft.CSharp" />
+  </ItemGroup>
+  <ItemGroup>
+    <!-- REG_IN_ITEM Form (Linked from area_L) -->
+    <Compile Include="..\..\..\..\area_L\area_L\L관창고%28입고등록무선바코드%29\REG_IN_ITEM.cs">
+      <Link>REG_IN_ITEM.cs</Link>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="..\..\..\..\area_L\area_L\L관창고%28입고등록무선바코드%29\REG_IN_ITEM.Designer.cs">
+      <Link>REG_IN_ITEM.Designer.cs</Link>
+      <DependentUpon>REG_IN_ITEM.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="..\..\..\..\area_L\area_L\L관창고%28입고등록무선바코드%29\REG_IN_ITEM.resx">
+      <Link>REG_IN_ITEM.resx</Link>
+      <DependentUpon>REG_IN_ITEM.cs</DependentUpon>
+    </EmbeddedResource>
+    <!-- DbHelper (Linked from area_L - REG_IN_ITEM dependency) -->
+    <Compile Include="..\..\..\..\area_L\area_L\L관창고%28입고등록무선바코드%29\DbHelper.cs">
+      <Link>DbHelper.cs</Link>
+    </Compile>
+    <!-- AlertForm (Linked from area_L - REG_IN_ITEM dependency) -->
+    <Compile Include="..\..\..\..\area_L\area_L\L관창고%28입고등록무선바코드%29\AlertForm.cs">
+      <Link>AlertForm.cs</Link>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="..\..\..\..\area_L\area_L\L관창고%28입고등록무선바코드%29\AlertForm.Designer.cs">
+      <Link>AlertForm.Designer.cs</Link>
+      <DependentUpon>AlertForm.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="..\..\..\..\area_L\area_L\L관창고%28입고등록무선바코드%29\AlertForm.resx">
+      <Link>AlertForm.resx</Link>
+      <DependentUpon>AlertForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <!-- Form2 (Linked from area_L - REG_IN_ITEM dependency) -->
+    <Compile Include="..\..\..\..\area_L\area_L\L관창고%28입고등록무선바코드%29\Form2.cs">
+      <Link>Form2.cs</Link>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="..\..\..\..\area_L\area_L\L관창고%28입고등록무선바코드%29\Form2.Designer.cs">
+      <Link>Form2.Designer.cs</Link>
+      <DependentUpon>Form2.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="..\..\..\..\area_L\area_L\L관창고%28입고등록무선바코드%29\Form2.resx">
+      <Link>Form2.resx</Link>
+      <DependentUpon>Form2.cs</DependentUpon>
+    </EmbeddedResource>
+    <!-- ExcelHelpers (Linked from area_L - REG_IN_ITEM dependency) -->
+    <Compile Include="..\..\..\..\area_L\area_L\L관창고%28입고등록무선바코드%29\ExcelHelpers.cs">
+      <Link>ExcelHelpers.cs</Link>
+    </Compile>
+    <!-- AssemblyInfo -->
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

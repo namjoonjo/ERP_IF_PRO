@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{C1D2E3F4-A5B6-7890-C1D2-E3F4A5B67890}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>RAZER_C</RootNamespace>
+    <AssemblyName>DANPLA_COLLECTOR_C</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE;DANPLA_COLLECTOR_C_DLL</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE;DANPLA_COLLECTOR_C_DLL</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <!-- DevExpress v23.2 -->
+    <Reference Include="DevExpress.Data.Desktop.v23.2, Version=23.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Data.v23.2, Version=23.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Drawing.v23.2, Version=23.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Printing.v23.2.Core, Version=23.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Utils.v23.2, Version=23.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraBars.v23.2, Version=23.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraEditors.v23.2, Version=23.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraGrid.v23.2, Version=23.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraPrinting.v23.2, Version=23.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraReports.v23.2, Version=23.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraReports.v23.2.Extensions, Version=23.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Xpo.v23.2, Version=23.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="FontAwesome.Sharp">
+      <HintPath>..\..\..\..\..\..\Program Files\FontAwesome\FontAwesome.Sharp.dll</HintPath>
+    </Reference>
+    <!-- Microsoft Office Interop (CommonModule dependency) -->
+    <Reference Include="Microsoft.Office.Interop.Excel">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <!-- System References -->
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Microsoft.CSharp" />
+  </ItemGroup>
+  <ItemGroup>
+    <!-- DANPLA_COLLECTOR_C Form (Linked from RAZER_C) -->
+    <Compile Include="..\..\..\..\RAZER_C\RAZER_C\Danpla\DANPLA_COLLECTOR_C.cs">
+      <Link>DANPLA_COLLECTOR_C.cs</Link>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="..\..\..\..\RAZER_C\RAZER_C\Danpla\DANPLA_COLLECTOR_C.Designer.cs">
+      <Link>DANPLA_COLLECTOR_C.Designer.cs</Link>
+      <DependentUpon>DANPLA_COLLECTOR_C.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="..\..\..\..\RAZER_C\RAZER_C\Danpla\DANPLA_COLLECTOR_C.resx">
+      <Link>DANPLA_COLLECTOR_C.resx</Link>
+      <DependentUpon>DANPLA_COLLECTOR_C.cs</DependentUpon>
+    </EmbeddedResource>
+    <!-- INSERT_MATENO_FORDANPLA (Linked from RAZER_C - DANPLA_COLLECTOR_C dependency) -->
+    <Compile Include="..\..\..\..\RAZER_C\RAZER_C\Danpla\INSERT_MATENO_FORDANPLA.cs">
+      <Link>Danpla\INSERT_MATENO_FORDANPLA.cs</Link>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="..\..\..\..\RAZER_C\RAZER_C\Danpla\INSERT_MATENO_FORDANPLA.Designer.cs">
+      <Link>Danpla\INSERT_MATENO_FORDANPLA.Designer.cs</Link>
+      <DependentUpon>INSERT_MATENO_FORDANPLA.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="..\..\..\..\RAZER_C\RAZER_C\Danpla\INSERT_MATENO_FORDANPLA.resx">
+      <Link>Danpla\INSERT_MATENO_FORDANPLA.resx</Link>
+      <DependentUpon>INSERT_MATENO_FORDANPLA.cs</DependentUpon>
+    </EmbeddedResource>
+    <!-- INSERT_PALLET_INFO (Linked from RAZER_C - DANPLA_COLLECTOR_C dependency) -->
+    <Compile Include="..\..\..\..\RAZER_C\RAZER_C\Danpla\INSERT_PALLET_INFO.cs">
+      <Link>Danpla\INSERT_PALLET_INFO.cs</Link>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="..\..\..\..\RAZER_C\RAZER_C\Danpla\INSERT_PALLET_INFO.Designer.cs">
+      <Link>Danpla\INSERT_PALLET_INFO.Designer.cs</Link>
+      <DependentUpon>INSERT_PALLET_INFO.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="..\..\..\..\RAZER_C\RAZER_C\Danpla\INSERT_PALLET_INFO.resx">
+      <Link>Danpla\INSERT_PALLET_INFO.resx</Link>
+      <DependentUpon>INSERT_PALLET_INFO.cs</DependentUpon>
+    </EmbeddedResource>
+    <!-- Danpla_Label (Linked from RAZER_C/Labels - DANPLA_COLLECTOR_C dependency) -->
+    <Compile Include="..\..\..\..\RAZER_C\RAZER_C\Labels\Danpla_Label.cs">
+      <Link>Labels\Danpla_Label.cs</Link>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="..\..\..\..\RAZER_C\RAZER_C\Labels\Danpla_Label.Designer.cs">
+      <Link>Labels\Danpla_Label.Designer.cs</Link>
+      <DependentUpon>Danpla_Label.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="..\..\..\..\RAZER_C\RAZER_C\Labels\Danpla_Label.resx">
+      <Link>Labels\Danpla_Label.resx</Link>
+      <DependentUpon>Danpla_Label.cs</DependentUpon>
+    </EmbeddedResource>
+    <!-- Pallet_Label (Linked from RAZER_C/Labels - DANPLA_COLLECTOR_C dependency) -->
+    <Compile Include="..\..\..\..\RAZER_C\RAZER_C\Labels\Pallet_Label.cs">
+      <Link>Labels\Pallet_Label.cs</Link>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="..\..\..\..\RAZER_C\RAZER_C\Labels\Pallet_Label.Designer.cs">
+      <Link>Labels\Pallet_Label.Designer.cs</Link>
+      <DependentUpon>Pallet_Label.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="..\..\..\..\RAZER_C\RAZER_C\Labels\Pallet_Label.resx">
+      <Link>Labels\Pallet_Label.resx</Link>
+      <DependentUpon>Pallet_Label.cs</DependentUpon>
+    </EmbeddedResource>
+    <!-- WaitForm1 (Linked from RAZER_C/Else - SplashScreenManager dependency) -->
+    <Compile Include="..\..\..\..\RAZER_C\RAZER_C\Else\WaitForm1.cs">
+      <Link>WaitForm1.cs</Link>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="..\..\..\..\RAZER_C\RAZER_C\Else\WaitForm1.Designer.cs">
+      <Link>WaitForm1.Designer.cs</Link>
+      <DependentUpon>WaitForm1.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="..\..\..\..\RAZER_C\RAZER_C\Else\WaitForm1.resx">
+      <Link>WaitForm1.resx</Link>
+      <DependentUpon>WaitForm1.cs</DependentUpon>
+    </EmbeddedResource>
+    <!-- CommonModule & MSSQL (Linked from RAZER_C/Modules) -->
+    <Compile Include="..\..\..\..\RAZER_C\RAZER_C\Modules\CommonModule.cs">
+      <Link>Modules\CommonModule.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\RAZER_C\RAZER_C\Modules\MSSQL.cs">
+      <Link>Modules\MSSQL.cs</Link>
+    </Compile>
+    <!-- CustomMessageBox (Linked from ERP_IF_PRO) -->
+    <Compile Include="..\..\..\ERP_IF_PRO\Modules\CustomMessageBox.cs">
+      <Link>Modules\CustomMessageBox.cs</Link>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="..\..\..\ERP_IF_PRO\Modules\CustomMessageBox.Designer.cs">
+      <Link>Modules\CustomMessageBox.Designer.cs</Link>
+      <DependentUpon>CustomMessageBox.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="..\..\..\ERP_IF_PRO\Modules\CustomMessageBox.resx">
+      <Link>Modules\CustomMessageBox.resx</Link>
+      <DependentUpon>CustomMessageBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <!-- AssemblyInfo -->
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Properties\licenses.licx" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

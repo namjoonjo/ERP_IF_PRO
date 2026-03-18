@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{A7B8C9D0-E1F2-3456-ABCD-567890123456}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>area_L</RootNamespace>
+    <AssemblyName>EXCEL_FOR_MATE</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE;EXCEL_FOR_MATE_DLL</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE;EXCEL_FOR_MATE_DLL</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <!-- DevExpress v23.2 -->
+    <Reference Include="DevExpress.Data.Desktop.v23.2, Version=23.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Data.v23.2, Version=23.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Drawing.v23.2, Version=23.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Pdf.v23.2.Core, Version=23.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Printing.v23.2.Core, Version=23.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.RichEdit.v23.2.Core, Version=23.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Utils.v23.2, Version=23.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraBars.v23.2, Version=23.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraEditors.v23.2, Version=23.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraGrid.v23.2, Version=23.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraRichEdit.v23.2, Version=23.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <!-- Microsoft Office Interop (EXCEL_FOR_MATE / CommonModule dependency) -->
+    <Reference Include="Microsoft.Office.Interop.Excel">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <!-- System References -->
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Microsoft.CSharp" />
+  </ItemGroup>
+  <ItemGroup>
+    <!-- EXCEL_FOR_MATE Form (Linked from area_L) -->
+    <Compile Include="..\..\..\..\area_L\area_L\L관창고%28반품창고%29\EXCEL_FOR_MATE.cs">
+      <Link>EXCEL_FOR_MATE.cs</Link>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="..\..\..\..\area_L\area_L\L관창고%28반품창고%29\EXCEL_FOR_MATE.Designer.cs">
+      <Link>EXCEL_FOR_MATE.Designer.cs</Link>
+      <DependentUpon>EXCEL_FOR_MATE.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="..\..\..\..\area_L\area_L\L관창고%28반품창고%29\EXCEL_FOR_MATE.resx">
+      <Link>EXCEL_FOR_MATE.resx</Link>
+      <DependentUpon>EXCEL_FOR_MATE.cs</DependentUpon>
+    </EmbeddedResource>
+    <!-- INSERT_MATENO2 Form (Linked from area_L - EXCEL_FOR_MATE dependency) -->
+    <Compile Include="..\..\..\..\area_L\area_L\L관창고%28반품창고%29\INSERT_MATENO2.cs">
+      <Link>INSERT_MATENO2.cs</Link>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="..\..\..\..\area_L\area_L\L관창고%28반품창고%29\INSERT_MATENO2.Designer.cs">
+      <Link>INSERT_MATENO2.Designer.cs</Link>
+      <DependentUpon>INSERT_MATENO2.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="..\..\..\..\area_L\area_L\L관창고%28반품창고%29\INSERT_MATENO2.resx">
+      <Link>INSERT_MATENO2.resx</Link>
+      <DependentUpon>INSERT_MATENO2.cs</DependentUpon>
+    </EmbeddedResource>
+    <!-- WaitForm2 (Linked from area_L - Designer dependency for SplashScreenManager) -->
+    <Compile Include="..\..\..\..\area_L\area_L\L관창고%28반품창고%29\WaitForm2.cs">
+      <Link>WaitForm2.cs</Link>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="..\..\..\..\area_L\area_L\L관창고%28반품창고%29\WaitForm2.Designer.cs">
+      <Link>WaitForm2.Designer.cs</Link>
+      <DependentUpon>WaitForm2.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="..\..\..\..\area_L\area_L\L관창고%28반품창고%29\WaitForm2.resx">
+      <Link>WaitForm2.resx</Link>
+      <DependentUpon>WaitForm2.cs</DependentUpon>
+    </EmbeddedResource>
+    <!-- CommonModule & MSSQL (Linked from area_L - namespace area_L.Modules) -->
+    <Compile Include="..\..\..\..\area_L\area_L\Modules\CommonModule.cs">
+      <Link>Modules\CommonModule.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\area_L\area_L\Modules\MSSQL.cs">
+      <Link>Modules\MSSQL.cs</Link>
+    </Compile>
+    <!-- AssemblyInfo -->
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Properties\licenses.licx" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

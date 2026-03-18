@@ -1,0 +1,13 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(ls *.sln)",
+      "Bash(where nuget:*)",
+      "Bash(find /c/RepositorySVN/InterfaceSVN -name *ERP_IF_FOR_DEBUG* -type f)",
+      "Bash(grep -r ERP_IF_FOR_DEBUG /c/RepositorySVN/InterfaceSVN/ERP_IF_PRO --include=*.csproj --include=*.sln)",
+      "Bash(find /c/InterfaceSVN/ERP_IF_FOR_DEBUG -type f \\\\\\(-name *.cs -o -name *.config -o -name *.resx \\\\\\))",
+      "Bash(cp \"C:\\\\RepositorySVN\\\\InterfaceSVN\\\\RAZER_C\\\\RAZER_C\\\\Modules\\\\MSSQL.cs\" \"C:\\\\InterfaceSVN\\\\ERP_IF_FOR_DEBUG\\\\ERP_IF_FOR_DEBUG\\\\Modules\\\\MSSQL.cs\")",
+      "Bash(cp \"C:\\\\RepositorySVN\\\\InterfaceSVN\\\\RAZER_C\\\\RAZER_C\\\\Modules\\\\CommonModule.cs\" \"C:\\\\InterfaceSVN\\\\ERP_IF_FOR_DEBUG\\\\ERP_IF_FOR_DEBUG\\\\Modules\\\\CommonModule.cs\")"
+    ]
+  }
+}

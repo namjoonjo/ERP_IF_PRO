@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{D2E3F4A5-B6C7-8901-D2E3-F4A5B6C78901}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>RAZER_C</RootNamespace>
+    <AssemblyName>UDI_COLLECTOR_EMAX</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE;UDI_COLLECTOR_EMAX_DLL</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE;UDI_COLLECTOR_EMAX_DLL</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <!-- DevExpress v23.2 -->
+    <Reference Include="DevExpress.Data.Desktop.v23.2, Version=23.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Data.v23.2, Version=23.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Drawing.v23.2, Version=23.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Printing.v23.2.Core, Version=23.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Utils.v23.2, Version=23.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraBars.v23.2, Version=23.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraEditors.v23.2, Version=23.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraGrid.v23.2, Version=23.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraPrinting.v23.2, Version=23.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="FontAwesome.Sharp">
+      <HintPath>..\..\..\..\..\..\Program Files\FontAwesome\FontAwesome.Sharp.dll</HintPath>
+    </Reference>
+    <!-- Microsoft Office Interop (CommonModule dependency) -->
+    <Reference Include="Microsoft.Office.Interop.Excel">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <!-- System References -->
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Microsoft.CSharp" />
+  </ItemGroup>
+  <ItemGroup>
+    <!-- UDI_COLLECTOR_EMAX Form (Linked from RAZER_C) -->
+    <Compile Include="..\..\..\..\RAZER_C\RAZER_C\UDI_Collector\UDI_COLLECTOR_EMAX.cs">
+      <Link>UDI_COLLECTOR_EMAX.cs</Link>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="..\..\..\..\RAZER_C\RAZER_C\UDI_Collector\UDI_COLLECTOR_EMAX.Designer.cs">
+      <Link>UDI_COLLECTOR_EMAX.Designer.cs</Link>
+      <DependentUpon>UDI_COLLECTOR_EMAX.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="..\..\..\..\RAZER_C\RAZER_C\UDI_Collector\UDI_COLLECTOR_EMAX.resx">
+      <Link>UDI_COLLECTOR_EMAX.resx</Link>
+      <DependentUpon>UDI_COLLECTOR_EMAX.cs</DependentUpon>
+    </EmbeddedResource>
+    <!-- CommonModule & MSSQL (Linked from RAZER_C/Modules) -->
+    <Compile Include="..\..\..\..\RAZER_C\RAZER_C\Modules\CommonModule.cs">
+      <Link>Modules\CommonModule.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\RAZER_C\RAZER_C\Modules\MSSQL.cs">
+      <Link>Modules\MSSQL.cs</Link>
+    </Compile>
+    <!-- CustomMessageBox (Linked from ERP_IF_PRO) -->
+    <Compile Include="..\..\..\ERP_IF_PRO\Modules\CustomMessageBox.cs">
+      <Link>Modules\CustomMessageBox.cs</Link>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="..\..\..\ERP_IF_PRO\Modules\CustomMessageBox.Designer.cs">
+      <Link>Modules\CustomMessageBox.Designer.cs</Link>
+      <DependentUpon>CustomMessageBox.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="..\..\..\ERP_IF_PRO\Modules\CustomMessageBox.resx">
+      <Link>Modules\CustomMessageBox.resx</Link>
+      <DependentUpon>CustomMessageBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <!-- AssemblyInfo -->
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

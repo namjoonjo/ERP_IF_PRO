@@ -65,76 +65,56 @@
     <Reference Include="Microsoft.CSharp" />
   </ItemGroup>
   <ItemGroup>
-    <!-- DANPLA_COLLECTOR Form (Linked from area_L) -->
-    <Compile Include="..\..\..\..\area_L\area_L\L관창고%28제품창고%29\DANPLA_COLLECTOR.cs">
-      <Link>DANPLA_COLLECTOR.cs</Link>
+    <!-- DANPLA_COLLECTOR Form -->
+    <Compile Include="DANPLA_COLLECTOR.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="..\..\..\..\area_L\area_L\L관창고%28제품창고%29\DANPLA_COLLECTOR.Designer.cs">
-      <Link>DANPLA_COLLECTOR.Designer.cs</Link>
+    <Compile Include="DANPLA_COLLECTOR.Designer.cs">
       <DependentUpon>DANPLA_COLLECTOR.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="..\..\..\..\area_L\area_L\L관창고%28제품창고%29\DANPLA_COLLECTOR.resx">
-      <Link>DANPLA_COLLECTOR.resx</Link>
+    <EmbeddedResource Include="DANPLA_COLLECTOR.resx">
       <DependentUpon>DANPLA_COLLECTOR.cs</DependentUpon>
     </EmbeddedResource>
-    <!-- Danpla_Label (Linked from area_L/Labels - DANPLA_COLLECTOR dependency) -->
-    <Compile Include="..\..\..\..\area_L\area_L\Labels\Danpla_Label.cs">
-      <Link>Labels\Danpla_Label.cs</Link>
+    <!-- Danpla_Label -->
+    <Compile Include="Labels\Danpla_Label.cs">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="..\..\..\..\area_L\area_L\Labels\Danpla_Label.Designer.cs">
-      <Link>Labels\Danpla_Label.Designer.cs</Link>
+    <Compile Include="Labels\Danpla_Label.Designer.cs">
       <DependentUpon>Danpla_Label.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="..\..\..\..\area_L\area_L\Labels\Danpla_Label.resx">
-      <Link>Labels\Danpla_Label.resx</Link>
+    <EmbeddedResource Include="Labels\Danpla_Label.resx">
       <DependentUpon>Danpla_Label.cs</DependentUpon>
     </EmbeddedResource>
-    <!-- Pallet_Label (Linked from area_L/Labels - DANPLA_COLLECTOR dependency) -->
-    <Compile Include="..\..\..\..\area_L\area_L\Labels\Pallet_Label.cs">
-      <Link>Labels\Pallet_Label.cs</Link>
+    <!-- Pallet_Label -->
+    <Compile Include="Labels\Pallet_Label.cs">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="..\..\..\..\area_L\area_L\Labels\Pallet_Label.Designer.cs">
-      <Link>Labels\Pallet_Label.Designer.cs</Link>
+    <Compile Include="Labels\Pallet_Label.Designer.cs">
       <DependentUpon>Pallet_Label.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="..\..\..\..\area_L\area_L\Labels\Pallet_Label.resx">
-      <Link>Labels\Pallet_Label.resx</Link>
+    <EmbeddedResource Include="Labels\Pallet_Label.resx">
       <DependentUpon>Pallet_Label.cs</DependentUpon>
     </EmbeddedResource>
-    <!-- WaitForm1 (Linked from area_L - Designer dependency for SplashScreenManager) -->
-    <Compile Include="..\..\..\..\area_L\area_L\L관창고%28제품창고%29\WaitForm1.cs">
-      <Link>WaitForm1.cs</Link>
+    <!-- WaitForm1 -->
+    <Compile Include="WaitForm1.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="..\..\..\..\area_L\area_L\L관창고%28제품창고%29\WaitForm1.Designer.cs">
-      <Link>WaitForm1.Designer.cs</Link>
+    <Compile Include="WaitForm1.Designer.cs">
       <DependentUpon>WaitForm1.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="..\..\..\..\area_L\area_L\L관창고%28제품창고%29\WaitForm1.resx">
-      <Link>WaitForm1.resx</Link>
+    <EmbeddedResource Include="WaitForm1.resx">
       <DependentUpon>WaitForm1.cs</DependentUpon>
     </EmbeddedResource>
-    <!-- CommonModule & MSSQL (Linked from area_L - namespace area_L.Modules) -->
-    <Compile Include="..\..\..\..\area_L\area_L\Modules\CommonModule.cs">
-      <Link>Modules\CommonModule.cs</Link>
-    </Compile>
-    <Compile Include="..\..\..\..\area_L\area_L\Modules\MSSQL.cs">
-      <Link>Modules\MSSQL.cs</Link>
-    </Compile>
-    <!-- CustomMessageBox (Linked from ERP_IF_PRO) -->
-    <Compile Include="..\..\..\ERP_IF_PRO\Modules\CustomMessageBox.cs">
-      <Link>Modules\CustomMessageBox.cs</Link>
+    <!-- Modules -->
+    <Compile Include="Modules\CommonModule.cs" />
+    <Compile Include="Modules\MSSQL.cs" />
+    <Compile Include="Modules\CustomMessageBox.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="..\..\..\ERP_IF_PRO\Modules\CustomMessageBox.Designer.cs">
-      <Link>Modules\CustomMessageBox.Designer.cs</Link>
+    <Compile Include="Modules\CustomMessageBox.Designer.cs">
       <DependentUpon>CustomMessageBox.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="..\..\..\ERP_IF_PRO\Modules\CustomMessageBox.resx">
-      <Link>Modules\CustomMessageBox.resx</Link>
+    <EmbeddedResource Include="Modules\CustomMessageBox.resx">
       <DependentUpon>CustomMessageBox.cs</DependentUpon>
     </EmbeddedResource>
     <!-- AssemblyInfo -->

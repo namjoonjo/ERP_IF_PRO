@@ -77,33 +77,22 @@
     <Reference Include="System.Xaml" />
   </ItemGroup>
   <ItemGroup>
-    <!-- PRODUCTION_ANALYSIS Form (Linked from COMBINATION) -->
-    <Compile Include="..\..\..\..\COMBINATION\COMBINATION\ManagerTools\PRODUCTION_ANALYSIS.cs">
-      <Link>PRODUCTION_ANALYSIS.cs</Link>
+    <!-- PRODUCTION_ANALYSIS Form (Local copy) -->
+    <Compile Include="PRODUCTION_ANALYSIS.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="..\..\..\..\COMBINATION\COMBINATION\ManagerTools\PRODUCTION_ANALYSIS.Designer.cs">
-      <Link>PRODUCTION_ANALYSIS.Designer.cs</Link>
+    <Compile Include="PRODUCTION_ANALYSIS.Designer.cs">
       <DependentUpon>PRODUCTION_ANALYSIS.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="..\..\..\..\COMBINATION\COMBINATION\ManagerTools\PRODUCTION_ANALYSIS.resx">
-      <Link>PRODUCTION_ANALYSIS.resx</Link>
+    <EmbeddedResource Include="PRODUCTION_ANALYSIS.resx">
       <DependentUpon>PRODUCTION_ANALYSIS.cs</DependentUpon>
     </EmbeddedResource>
-    <!-- CommonModule & MSSQL (Linked from ERP_IF_PRO) -->
-    <Compile Include="..\..\..\ERP_IF_PRO\Modules\CommonModule.cs">
-      <Link>Modules\CommonModule.cs</Link>
-    </Compile>
-    <Compile Include="..\..\..\ERP_IF_PRO\Modules\MSSQL.cs">
-      <Link>Modules\MSSQL.cs</Link>
-    </Compile>
-    <!-- SQLITE3 & ProductionRecords (Linked from COMBINATION) -->
-    <Compile Include="..\..\..\..\COMBINATION\COMBINATION\Modules\SQLITE3.cs">
-      <Link>Modules\SQLITE3.cs</Link>
-    </Compile>
-    <Compile Include="..\..\..\..\COMBINATION\COMBINATION\Modules\ProductionRecords.cs">
-      <Link>Modules\ProductionRecords.cs</Link>
-    </Compile>
+    <!-- CommonModule & MSSQL (Local copy) -->
+    <Compile Include="Modules\CommonModule.cs" />
+    <Compile Include="Modules\MSSQL.cs" />
+    <!-- SQLITE3 & ProductionRecords (Local copy) -->
+    <Compile Include="Modules\SQLITE3.cs" />
+    <Compile Include="Modules\ProductionRecords.cs" />
     <!-- Namespace Bridge -->
     <Compile Include="NamespaceBridge.cs" />
     <!-- AssemblyInfo -->

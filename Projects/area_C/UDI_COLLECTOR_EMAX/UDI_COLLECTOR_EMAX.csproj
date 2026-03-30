@@ -62,17 +62,14 @@
     <Reference Include="Microsoft.CSharp" />
   </ItemGroup>
   <ItemGroup>
-    <!-- UDI_COLLECTOR_EMAX Form (Linked from RAZER_C) -->
-    <Compile Include="..\..\..\..\RAZER_C\RAZER_C\UDI_Collector\UDI_COLLECTOR_EMAX.cs">
-      <Link>UDI_COLLECTOR_EMAX.cs</Link>
+    <!-- UDI_COLLECTOR_EMAX Form (독립 복사본) -->
+    <Compile Include="UDI_COLLECTOR_EMAX.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="..\..\..\..\RAZER_C\RAZER_C\UDI_Collector\UDI_COLLECTOR_EMAX.Designer.cs">
-      <Link>UDI_COLLECTOR_EMAX.Designer.cs</Link>
+    <Compile Include="UDI_COLLECTOR_EMAX.Designer.cs">
       <DependentUpon>UDI_COLLECTOR_EMAX.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="..\..\..\..\RAZER_C\RAZER_C\UDI_Collector\UDI_COLLECTOR_EMAX.resx">
-      <Link>UDI_COLLECTOR_EMAX.resx</Link>
+    <EmbeddedResource Include="UDI_COLLECTOR_EMAX.resx">
       <DependentUpon>UDI_COLLECTOR_EMAX.cs</DependentUpon>
     </EmbeddedResource>
     <!-- CommonModule & MSSQL (Linked from RAZER_C/Modules) -->

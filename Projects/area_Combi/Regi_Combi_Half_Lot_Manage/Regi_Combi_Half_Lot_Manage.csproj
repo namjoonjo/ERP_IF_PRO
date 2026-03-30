@@ -70,75 +70,55 @@
     <Reference Include="System.Xaml" />
   </ItemGroup>
   <ItemGroup>
-    <!-- Regi_Combi_Half_Lot_Manage Form (Linked from COMBINATION) -->
-    <Compile Include="..\..\..\..\COMBINATION\COMBINATION\재고출고관리\Regi_Combi_Half_Lot_Manage.cs">
-      <Link>Regi_Combi_Half_Lot_Manage.cs</Link>
+    <!-- Regi_Combi_Half_Lot_Manage Form (Local copy) -->
+    <Compile Include="Regi_Combi_Half_Lot_Manage.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="..\..\..\..\COMBINATION\COMBINATION\재고출고관리\Regi_Combi_Half_Lot_Manage.Designer.cs">
-      <Link>Regi_Combi_Half_Lot_Manage.Designer.cs</Link>
+    <Compile Include="Regi_Combi_Half_Lot_Manage.Designer.cs">
       <DependentUpon>Regi_Combi_Half_Lot_Manage.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="..\..\..\..\COMBINATION\COMBINATION\재고출고관리\Regi_Combi_Half_Lot_Manage.resx">
-      <Link>Regi_Combi_Half_Lot_Manage.resx</Link>
+    <EmbeddedResource Include="Regi_Combi_Half_Lot_Manage.resx">
       <DependentUpon>Regi_Combi_Half_Lot_Manage.cs</DependentUpon>
     </EmbeddedResource>
-    <!-- CommonModule & MSSQL (Linked from ERP_IF_PRO) -->
-    <Compile Include="..\..\..\ERP_IF_PRO\Modules\CommonModule.cs">
-      <Link>Modules\CommonModule.cs</Link>
-    </Compile>
-    <Compile Include="..\..\..\ERP_IF_PRO\Modules\MSSQL.cs">
-      <Link>Modules\MSSQL.cs</Link>
-    </Compile>
-    <!-- PrintInfo (Linked from COMBINATION) -->
-    <Compile Include="..\..\..\..\COMBINATION\COMBINATION\Modules\PrintInfo.cs">
-      <Link>Modules\PrintInfo.cs</Link>
-    </Compile>
-    <!-- MixingLabels (Linked from COMBINATION) -->
-    <Compile Include="..\..\..\..\COMBINATION\COMBINATION\MixingLabel\MixingLabelforZebra.cs">
-      <Link>MixingLabels\MixingLabelforZebra.cs</Link>
+    <!-- CommonModule & MSSQL (Local copy) -->
+    <Compile Include="Modules\CommonModule.cs" />
+    <Compile Include="Modules\MSSQL.cs" />
+    <!-- PrintInfo (Local copy) -->
+    <Compile Include="Modules\PrintInfo.cs" />
+    <!-- MixingLabels (Local copy) -->
+    <Compile Include="MixingLabels\MixingLabelforZebra.cs">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="..\..\..\..\COMBINATION\COMBINATION\MixingLabel\MixingLabelforZebra.Designer.cs">
-      <Link>MixingLabels\MixingLabelforZebra.Designer.cs</Link>
+    <Compile Include="MixingLabels\MixingLabelforZebra.Designer.cs">
       <DependentUpon>MixingLabelforZebra.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="..\..\..\..\COMBINATION\COMBINATION\MixingLabel\MixingLabelforZebra.resx">
-      <Link>MixingLabels\MixingLabelforZebra.resx</Link>
+    <EmbeddedResource Include="MixingLabels\MixingLabelforZebra.resx">
       <DependentUpon>MixingLabelforZebra.cs</DependentUpon>
     </EmbeddedResource>
-    <Compile Include="..\..\..\..\COMBINATION\COMBINATION\MixingLabel\CODEX_MixingLabelforZebra.cs">
-      <Link>MixingLabels\CODEX_MixingLabelforZebra.cs</Link>
+    <Compile Include="MixingLabels\CODEX_MixingLabelforZebra.cs">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="..\..\..\..\COMBINATION\COMBINATION\MixingLabel\CODEX_MixingLabelforZebra.Designer.cs">
-      <Link>MixingLabels\CODEX_MixingLabelforZebra.Designer.cs</Link>
+    <Compile Include="MixingLabels\CODEX_MixingLabelforZebra.Designer.cs">
       <DependentUpon>CODEX_MixingLabelforZebra.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="..\..\..\..\COMBINATION\COMBINATION\MixingLabel\CODEX_MixingLabelforZebra.resx">
-      <Link>MixingLabels\CODEX_MixingLabelforZebra.resx</Link>
+    <EmbeddedResource Include="MixingLabels\CODEX_MixingLabelforZebra.resx">
       <DependentUpon>CODEX_MixingLabelforZebra.cs</DependentUpon>
     </EmbeddedResource>
-    <!-- SemiFinishedLabel (Linked from COMBINATION) -->
-    <Compile Include="..\..\..\..\COMBINATION\COMBINATION\MixingLabel\SemiFinishedLabel.cs">
-      <Link>MixingLabels\SemiFinishedLabel.cs</Link>
+    <!-- SemiFinishedLabel (Local copy) -->
+    <Compile Include="MixingLabels\SemiFinishedLabel.cs">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="..\..\..\..\COMBINATION\COMBINATION\MixingLabel\SemiFinishedLabel.Designer.cs">
-      <Link>MixingLabels\SemiFinishedLabel.Designer.cs</Link>
+    <Compile Include="MixingLabels\SemiFinishedLabel.Designer.cs">
       <DependentUpon>SemiFinishedLabel.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="..\..\..\..\COMBINATION\COMBINATION\MixingLabel\SemiFinishedLabel.resx">
-      <Link>MixingLabels\SemiFinishedLabel.resx</Link>
+    <EmbeddedResource Include="MixingLabels\SemiFinishedLabel.resx">
       <DependentUpon>SemiFinishedLabel.cs</DependentUpon>
     </EmbeddedResource>
     <!-- MixingLabel Excel Templates -->
-    <Content Include="..\..\..\..\COMBINATION\COMBINATION\MixingLabel\MixingLabel.xlsx">
-      <Link>MixingLabels\MixingLabel.xlsx</Link>
+    <Content Include="MixingLabels\MixingLabel.xlsx">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="..\..\..\..\COMBINATION\COMBINATION\MixingLabel\CODEX_MixingLabel.xlsx">
-      <Link>MixingLabels\CODEX_MixingLabel.xlsx</Link>
+    <Content Include="MixingLabels\CODEX_MixingLabel.xlsx">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <!-- Namespace Bridge -->

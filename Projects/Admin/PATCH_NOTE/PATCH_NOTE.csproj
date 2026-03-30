@@ -42,17 +42,14 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <!-- PATCH_NOTE Form (Linked from COMBINATION) -->
-    <Compile Include="..\..\..\..\COMBINATION\COMBINATION\ManagerTools\PATCH_NOTE.cs">
-      <Link>PATCH_NOTE.cs</Link>
+    <!-- PATCH_NOTE Form (Local copy) -->
+    <Compile Include="PATCH_NOTE.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="..\..\..\..\COMBINATION\COMBINATION\ManagerTools\PATCH_NOTE.Designer.cs">
-      <Link>PATCH_NOTE.Designer.cs</Link>
+    <Compile Include="PATCH_NOTE.Designer.cs">
       <DependentUpon>PATCH_NOTE.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="..\..\..\..\COMBINATION\COMBINATION\ManagerTools\PATCH_NOTE.resx">
-      <Link>PATCH_NOTE.resx</Link>
+    <EmbeddedResource Include="PATCH_NOTE.resx">
       <DependentUpon>PATCH_NOTE.cs</DependentUpon>
     </EmbeddedResource>
     <!-- AssemblyInfo -->

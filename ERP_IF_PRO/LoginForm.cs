@@ -1,7 +1,10 @@
 using System;
 using System.Drawing;
+using System.Net;
+using System.Net.Sockets;
 using System.Windows.Forms;
 using DevExpress.XtraEditors;
+using ERP_IF_PRO.Modules;
 
 namespace ERP_IF_PRO
 {
@@ -195,6 +198,7 @@ namespace ERP_IF_PRO
                 if (txtPassword.Text == ADMIN_PASSWORD)
                 {
                     IsAdmin = true;
+                    InsertLoginLog("Admin");
                     this.DialogResult = DialogResult.OK;
                     this.Close();
                 }
@@ -209,9 +213,45 @@ namespace ERP_IF_PRO
             else // 일반 사용자
             {
                 IsAdmin = false;
+                InsertLoginLog("일반");
                 this.DialogResult = DialogResult.OK;
                 this.Close();
             }
+        }
+
+        /// <summary>
+        /// 로그인 로그 INSERT
+        /// </summary>
+        private void InsertLoginLog(string userName)
+        {
+            try
+            {
+                string pcIp = GetLocalIPAddress();
+                MSSQL db = new MSSQL("ERP_2");
+                string strSql = "ERP_2.dbo.ST_TB_ERP_IF_USER_LOGIN_LOG_INS";
+                db.Parameter("@PC_IP", pcIp);
+                db.Parameter("@USER", userName);
+                db.ExecuteNonSql(strSql);
+            }
+            catch { } // 로그 실패해도 로그인은 진행
+        }
+
+        /// <summary>
+        /// 로컬 IP 주소 가져오기
+        /// </summary>
+        private string GetLocalIPAddress()
+        {
+            try
+            {
+                var host = Dns.GetHostEntry(Dns.GetHostName());
+                foreach (var ip in host.AddressList)
+                {
+                    if (ip.AddressFamily == AddressFamily.InterNetwork)
+                        return ip.ToString();
+                }
+                return "Unknown";
+            }
+            catch { return "Unknown"; }
         }
 
         private void BtnCancel_Click(object sender, EventArgs e)

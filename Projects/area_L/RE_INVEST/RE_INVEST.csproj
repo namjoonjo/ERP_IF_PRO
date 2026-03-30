@@ -63,47 +63,33 @@
     <Reference Include="Microsoft.CSharp" />
   </ItemGroup>
   <ItemGroup>
-    <!-- RE_INVEST Form (Linked from area_L) -->
-    <Compile Include="..\..\..\..\area_L\area_L\L관창고%28반품2창고전수조사%29\RE_INVEST.cs">
-      <Link>RE_INVEST.cs</Link>
+    <!-- RE_INVEST Form -->
+    <Compile Include="RE_INVEST.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="..\..\..\..\area_L\area_L\L관창고%28반품2창고전수조사%29\RE_INVEST.Designer.cs">
-      <Link>RE_INVEST.Designer.cs</Link>
+    <Compile Include="RE_INVEST.Designer.cs">
       <DependentUpon>RE_INVEST.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="..\..\..\..\area_L\area_L\L관창고%28반품2창고전수조사%29\RE_INVEST.resx">
-      <Link>RE_INVEST.resx</Link>
+    <EmbeddedResource Include="RE_INVEST.resx">
       <DependentUpon>RE_INVEST.cs</DependentUpon>
     </EmbeddedResource>
-    <!-- RE_INSERT_FORM (Linked from area_L - RE_INVEST dependency) -->
-    <Compile Include="..\..\..\..\area_L\area_L\L관창고%28반품2창고전수조사%29\RE_INSERT_FORM.cs">
-      <Link>RE_INSERT_FORM.cs</Link>
+    <!-- RE_INSERT_FORM -->
+    <Compile Include="RE_INSERT_FORM.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="..\..\..\..\area_L\area_L\L관창고%28반품2창고전수조사%29\RE_INSERT_FORM.Designer.cs">
-      <Link>RE_INSERT_FORM.Designer.cs</Link>
+    <Compile Include="RE_INSERT_FORM.Designer.cs">
       <DependentUpon>RE_INSERT_FORM.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="..\..\..\..\area_L\area_L\L관창고%28반품2창고전수조사%29\RE_INSERT_FORM.resx">
-      <Link>RE_INSERT_FORM.resx</Link>
+    <EmbeddedResource Include="RE_INSERT_FORM.resx">
       <DependentUpon>RE_INSERT_FORM.cs</DependentUpon>
     </EmbeddedResource>
-    <!-- ScanItem (Linked from area_L - RE_INVEST dependency) -->
-    <Compile Include="..\..\..\..\area_L\area_L\L관창고%28반품2창고전수조사%29\ScanItem.cs">
-      <Link>ScanItem.cs</Link>
-    </Compile>
-    <!-- DbHelper (Linked from area_L/입고등록무선바코드) -->
-    <Compile Include="..\..\..\..\area_L\area_L\L관창고%28입고등록무선바코드%29\DbHelper.cs">
-      <Link>DbHelper.cs</Link>
-    </Compile>
-    <!-- CommonModule & MSSQL (Linked from area_L - namespace area_L.Modules) -->
-    <Compile Include="..\..\..\..\area_L\area_L\Modules\CommonModule.cs">
-      <Link>Modules\CommonModule.cs</Link>
-    </Compile>
-    <Compile Include="..\..\..\..\area_L\area_L\Modules\MSSQL.cs">
-      <Link>Modules\MSSQL.cs</Link>
-    </Compile>
+    <!-- ScanItem -->
+    <Compile Include="ScanItem.cs" />
+    <!-- DbHelper -->
+    <Compile Include="DbHelper.cs" />
+    <!-- Modules -->
+    <Compile Include="Modules\CommonModule.cs" />
+    <Compile Include="Modules\MSSQL.cs" />
     <!-- AssemblyInfo -->
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Properties\licenses.licx" />

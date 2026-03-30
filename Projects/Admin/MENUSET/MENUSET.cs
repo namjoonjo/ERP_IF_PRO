@@ -157,6 +157,18 @@ namespace RAZER_C
             gridView1.Columns["USE_FLAG"].Width = 70;
             gridView1.Columns["USE_FLAG"].VisibleIndex = 9;
 
+            gridView1.Columns["PANEL_YN"].Caption = "패널";
+            gridView1.Columns["PANEL_YN"].Width = 60;
+            gridView1.Columns["PANEL_YN"].VisibleIndex = 10;
+
+            gridView1.Columns["PASSWORD_YN"].Caption = "비밀번호YN";
+            gridView1.Columns["PASSWORD_YN"].Width = 80;
+            gridView1.Columns["PASSWORD_YN"].VisibleIndex = 11;
+
+            gridView1.Columns["PASSWORD"].Caption = "비밀번호";
+            gridView1.Columns["PASSWORD"].Width = 120;
+            gridView1.Columns["PASSWORD"].VisibleIndex = 12;
+
             // CHK 컬럼 체크박스 에디터 (EXCEL_QR_MAPPER 패턴 그대로)
             RepositoryItemCheckEdit ri = new RepositoryItemCheckEdit();
             ri.ValueChecked = "True";
@@ -180,6 +192,16 @@ namespace RAZER_C
             comboDock.Items.Add("Y");
             comboDock.Items.Add("N");
             gridView1.Columns["DOCK_OR_NOT"].ColumnEdit = comboDock;
+
+            RepositoryItemComboBox comboPanelYn = new RepositoryItemComboBox();
+            comboPanelYn.Items.Add("Y");
+            comboPanelYn.Items.Add("N");
+            gridView1.Columns["PANEL_YN"].ColumnEdit = comboPanelYn;
+
+            RepositoryItemComboBox comboPasswordYn = new RepositoryItemComboBox();
+            comboPasswordYn.Items.Add("Y");
+            comboPasswordYn.Items.Add("N");
+            gridView1.Columns["PASSWORD_YN"].ColumnEdit = comboPasswordYn;
 
             // 그리드 옵션
             gridView1.OptionsView.ShowIndicator = false;
@@ -208,6 +230,9 @@ namespace RAZER_C
                     dtMenu.Columns.Add("ADMIN_YN", typeof(string));
                     dtMenu.Columns.Add("DOCK_OR_NOT", typeof(string));
                     dtMenu.Columns.Add("USE_FLAG", typeof(string));
+                    dtMenu.Columns.Add("PANEL_YN", typeof(string));
+                    dtMenu.Columns.Add("PASSWORD_YN", typeof(string));
+                    dtMenu.Columns.Add("PASSWORD", typeof(string));
                     gridControl1.DataSource = dtMenu;
                     fn_SetGridColumns();
                 }
@@ -223,6 +248,9 @@ namespace RAZER_C
                 newRow["ADMIN_YN"] = "N";
                 newRow["DOCK_OR_NOT"] = "N";
                 newRow["USE_FLAG"] = "Y";
+                newRow["PANEL_YN"] = "Y";
+                newRow["PASSWORD_YN"] = "N";
+                newRow["PASSWORD"] = "";
                 dtMenu.Rows.Add(newRow);
 
                 // 새 행으로 포커스 이동
@@ -366,6 +394,9 @@ namespace RAZER_C
                 saveDt.Columns.Add("ADMIN_YN", typeof(string));
                 saveDt.Columns.Add("DOCK_OR_NOT", typeof(string));
                 saveDt.Columns.Add("USE_FLAG", typeof(string));
+                saveDt.Columns.Add("PANEL_YN", typeof(string));
+                saveDt.Columns.Add("PASSWORD_YN", typeof(string));
+                saveDt.Columns.Add("PASSWORD", typeof(string));
 
                 for (int i = 0; i < gridView1.RowCount; i++)
                 {
@@ -382,6 +413,9 @@ namespace RAZER_C
                     newRow["ADMIN_YN"] = gridView1.GetRowCellDisplayText(i, "ADMIN_YN");
                     newRow["DOCK_OR_NOT"] = gridView1.GetRowCellDisplayText(i, "DOCK_OR_NOT");
                     newRow["USE_FLAG"] = gridView1.GetRowCellDisplayText(i, "USE_FLAG");
+                    newRow["PANEL_YN"] = gridView1.GetRowCellDisplayText(i, "PANEL_YN");
+                    newRow["PASSWORD_YN"] = gridView1.GetRowCellDisplayText(i, "PASSWORD_YN");
+                    newRow["PASSWORD"] = gridView1.GetRowCellDisplayText(i, "PASSWORD");
                     saveDt.Rows.Add(newRow);
                 }
 

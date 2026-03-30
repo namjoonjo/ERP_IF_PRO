@@ -61,17 +61,14 @@
     <Reference Include="Microsoft.CSharp" />
   </ItemGroup>
   <ItemGroup>
-    <!-- EXCEL_QR_MAPPER Form (Linked from RAZER_C) -->
-    <Compile Include="..\..\..\..\RAZER_C\RAZER_C\Else\EXCEL_QR_MAPPER.cs">
-      <Link>EXCEL_QR_MAPPER.cs</Link>
+    <!-- EXCEL_QR_MAPPER Form (독립 복사본) -->
+    <Compile Include="EXCEL_QR_MAPPER.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="..\..\..\..\RAZER_C\RAZER_C\Else\EXCEL_QR_MAPPER.Designer.cs">
-      <Link>EXCEL_QR_MAPPER.Designer.cs</Link>
+    <Compile Include="EXCEL_QR_MAPPER.Designer.cs">
       <DependentUpon>EXCEL_QR_MAPPER.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="..\..\..\..\RAZER_C\RAZER_C\Else\EXCEL_QR_MAPPER.resx">
-      <Link>EXCEL_QR_MAPPER.resx</Link>
+    <EmbeddedResource Include="EXCEL_QR_MAPPER.resx">
       <DependentUpon>EXCEL_QR_MAPPER.cs</DependentUpon>
     </EmbeddedResource>
     <!-- CommonModule & MSSQL (Linked from RAZER_C/Modules) -->

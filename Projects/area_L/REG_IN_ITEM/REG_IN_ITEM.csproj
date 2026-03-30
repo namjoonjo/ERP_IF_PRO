@@ -45,53 +45,40 @@
     <Reference Include="Microsoft.CSharp" />
   </ItemGroup>
   <ItemGroup>
-    <!-- REG_IN_ITEM Form (Linked from area_L) -->
-    <Compile Include="..\..\..\..\area_L\area_L\L관창고%28입고등록무선바코드%29\REG_IN_ITEM.cs">
-      <Link>REG_IN_ITEM.cs</Link>
+    <!-- REG_IN_ITEM Form -->
+    <Compile Include="REG_IN_ITEM.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="..\..\..\..\area_L\area_L\L관창고%28입고등록무선바코드%29\REG_IN_ITEM.Designer.cs">
-      <Link>REG_IN_ITEM.Designer.cs</Link>
+    <Compile Include="REG_IN_ITEM.Designer.cs">
       <DependentUpon>REG_IN_ITEM.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="..\..\..\..\area_L\area_L\L관창고%28입고등록무선바코드%29\REG_IN_ITEM.resx">
-      <Link>REG_IN_ITEM.resx</Link>
+    <EmbeddedResource Include="REG_IN_ITEM.resx">
       <DependentUpon>REG_IN_ITEM.cs</DependentUpon>
     </EmbeddedResource>
-    <!-- DbHelper (Linked from area_L - REG_IN_ITEM dependency) -->
-    <Compile Include="..\..\..\..\area_L\area_L\L관창고%28입고등록무선바코드%29\DbHelper.cs">
-      <Link>DbHelper.cs</Link>
-    </Compile>
-    <!-- AlertForm (Linked from area_L - REG_IN_ITEM dependency) -->
-    <Compile Include="..\..\..\..\area_L\area_L\L관창고%28입고등록무선바코드%29\AlertForm.cs">
-      <Link>AlertForm.cs</Link>
+    <!-- DbHelper -->
+    <Compile Include="DbHelper.cs" />
+    <!-- AlertForm -->
+    <Compile Include="AlertForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="..\..\..\..\area_L\area_L\L관창고%28입고등록무선바코드%29\AlertForm.Designer.cs">
-      <Link>AlertForm.Designer.cs</Link>
+    <Compile Include="AlertForm.Designer.cs">
       <DependentUpon>AlertForm.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="..\..\..\..\area_L\area_L\L관창고%28입고등록무선바코드%29\AlertForm.resx">
-      <Link>AlertForm.resx</Link>
+    <EmbeddedResource Include="AlertForm.resx">
       <DependentUpon>AlertForm.cs</DependentUpon>
     </EmbeddedResource>
-    <!-- Form2 (Linked from area_L - REG_IN_ITEM dependency) -->
-    <Compile Include="..\..\..\..\area_L\area_L\L관창고%28입고등록무선바코드%29\Form2.cs">
-      <Link>Form2.cs</Link>
+    <!-- Form2 -->
+    <Compile Include="Form2.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="..\..\..\..\area_L\area_L\L관창고%28입고등록무선바코드%29\Form2.Designer.cs">
-      <Link>Form2.Designer.cs</Link>
+    <Compile Include="Form2.Designer.cs">
       <DependentUpon>Form2.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="..\..\..\..\area_L\area_L\L관창고%28입고등록무선바코드%29\Form2.resx">
-      <Link>Form2.resx</Link>
+    <EmbeddedResource Include="Form2.resx">
       <DependentUpon>Form2.cs</DependentUpon>
     </EmbeddedResource>
-    <!-- ExcelHelpers (Linked from area_L - REG_IN_ITEM dependency) -->
-    <Compile Include="..\..\..\..\area_L\area_L\L관창고%28입고등록무선바코드%29\ExcelHelpers.cs">
-      <Link>ExcelHelpers.cs</Link>
-    </Compile>
+    <!-- ExcelHelpers -->
+    <Compile Include="ExcelHelpers.cs" />
     <!-- AssemblyInfo -->
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

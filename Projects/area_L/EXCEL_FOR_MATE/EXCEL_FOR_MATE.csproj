@@ -61,52 +61,39 @@
     <Reference Include="Microsoft.CSharp" />
   </ItemGroup>
   <ItemGroup>
-    <!-- EXCEL_FOR_MATE Form (Linked from area_L) -->
-    <Compile Include="..\..\..\..\area_L\area_L\L관창고%28반품창고%29\EXCEL_FOR_MATE.cs">
-      <Link>EXCEL_FOR_MATE.cs</Link>
+    <!-- EXCEL_FOR_MATE Form -->
+    <Compile Include="EXCEL_FOR_MATE.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="..\..\..\..\area_L\area_L\L관창고%28반품창고%29\EXCEL_FOR_MATE.Designer.cs">
-      <Link>EXCEL_FOR_MATE.Designer.cs</Link>
+    <Compile Include="EXCEL_FOR_MATE.Designer.cs">
       <DependentUpon>EXCEL_FOR_MATE.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="..\..\..\..\area_L\area_L\L관창고%28반품창고%29\EXCEL_FOR_MATE.resx">
-      <Link>EXCEL_FOR_MATE.resx</Link>
+    <EmbeddedResource Include="EXCEL_FOR_MATE.resx">
       <DependentUpon>EXCEL_FOR_MATE.cs</DependentUpon>
     </EmbeddedResource>
-    <!-- INSERT_MATENO2 Form (Linked from area_L - EXCEL_FOR_MATE dependency) -->
-    <Compile Include="..\..\..\..\area_L\area_L\L관창고%28반품창고%29\INSERT_MATENO2.cs">
-      <Link>INSERT_MATENO2.cs</Link>
+    <!-- INSERT_MATENO2 Form -->
+    <Compile Include="INSERT_MATENO2.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="..\..\..\..\area_L\area_L\L관창고%28반품창고%29\INSERT_MATENO2.Designer.cs">
-      <Link>INSERT_MATENO2.Designer.cs</Link>
+    <Compile Include="INSERT_MATENO2.Designer.cs">
       <DependentUpon>INSERT_MATENO2.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="..\..\..\..\area_L\area_L\L관창고%28반품창고%29\INSERT_MATENO2.resx">
-      <Link>INSERT_MATENO2.resx</Link>
+    <EmbeddedResource Include="INSERT_MATENO2.resx">
       <DependentUpon>INSERT_MATENO2.cs</DependentUpon>
     </EmbeddedResource>
-    <!-- WaitForm2 (Linked from area_L - Designer dependency for SplashScreenManager) -->
-    <Compile Include="..\..\..\..\area_L\area_L\L관창고%28반품창고%29\WaitForm2.cs">
-      <Link>WaitForm2.cs</Link>
+    <!-- WaitForm2 -->
+    <Compile Include="WaitForm2.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="..\..\..\..\area_L\area_L\L관창고%28반품창고%29\WaitForm2.Designer.cs">
-      <Link>WaitForm2.Designer.cs</Link>
+    <Compile Include="WaitForm2.Designer.cs">
       <DependentUpon>WaitForm2.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="..\..\..\..\area_L\area_L\L관창고%28반품창고%29\WaitForm2.resx">
-      <Link>WaitForm2.resx</Link>
+    <EmbeddedResource Include="WaitForm2.resx">
       <DependentUpon>WaitForm2.cs</DependentUpon>
     </EmbeddedResource>
-    <!-- CommonModule & MSSQL (Linked from area_L - namespace area_L.Modules) -->
-    <Compile Include="..\..\..\..\area_L\area_L\Modules\CommonModule.cs">
-      <Link>Modules\CommonModule.cs</Link>
-    </Compile>
-    <Compile Include="..\..\..\..\area_L\area_L\Modules\MSSQL.cs">
-      <Link>Modules\MSSQL.cs</Link>
-    </Compile>
+    <!-- Modules -->
+    <Compile Include="Modules\CommonModule.cs" />
+    <Compile Include="Modules\MSSQL.cs" />
     <!-- AssemblyInfo -->
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Properties\licenses.licx" />

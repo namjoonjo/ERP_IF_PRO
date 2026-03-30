@@ -68,43 +68,35 @@
     <Reference Include="Microsoft.CSharp" />
   </ItemGroup>
   <ItemGroup>
-    <!-- Excel_QR Form (Linked from RAZER_C) -->
-    <Compile Include="..\..\..\..\RAZER_C\RAZER_C\Else\Excel_QR.cs">
-      <Link>Excel_QR.cs</Link>
+    <!-- Excel_QR Form (독립 복사본) -->
+    <Compile Include="Excel_QR.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="..\..\..\..\RAZER_C\RAZER_C\Else\Excel_QR.Designer.cs">
-      <Link>Excel_QR.Designer.cs</Link>
+    <Compile Include="Excel_QR.Designer.cs">
       <DependentUpon>Excel_QR.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="..\..\..\..\RAZER_C\RAZER_C\Else\Excel_QR.resx">
-      <Link>Excel_QR.resx</Link>
+    <EmbeddedResource Include="Excel_QR.resx">
       <DependentUpon>Excel_QR.cs</DependentUpon>
     </EmbeddedResource>
-    <!-- QR_SelectBox (Linked from RAZER_C/Else - Excel_QR dependency) -->
-    <Compile Include="..\..\..\..\RAZER_C\RAZER_C\Else\QR_SelectBox.cs">
-      <Link>Else\QR_SelectBox.cs</Link>
+    <!-- QR_SelectBox (독립 복사본) -->
+    <Compile Include="Else\QR_SelectBox.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="..\..\..\..\RAZER_C\RAZER_C\Else\QR_SelectBox.Designer.cs">
-      <Link>Else\QR_SelectBox.Designer.cs</Link>
+    <Compile Include="Else\QR_SelectBox.Designer.cs">
       <DependentUpon>QR_SelectBox.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="..\..\..\..\RAZER_C\RAZER_C\Else\QR_SelectBox.resx">
-      <Link>Else\QR_SelectBox.resx</Link>
+    <EmbeddedResource Include="Else\QR_SelectBox.resx">
       <DependentUpon>QR_SelectBox.cs</DependentUpon>
     </EmbeddedResource>
-    <!-- WaitForm1 (Linked from RAZER_C/Else - SplashScreenManager dependency) -->
-    <Compile Include="..\..\..\..\RAZER_C\RAZER_C\Else\WaitForm1.cs">
-      <Link>WaitForm1.cs</Link>
+    <!-- WaitForm1 (독립 복사본) -->
+    <Compile Include="WaitForm1.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="..\..\..\..\RAZER_C\RAZER_C\Else\WaitForm1.Designer.cs">
-      <Link>WaitForm1.Designer.cs</Link>
+    <Compile Include="WaitForm1.Designer.cs">
       <DependentUpon>WaitForm1.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="..\..\..\..\RAZER_C\RAZER_C\Else\WaitForm1.resx">
-      <Link>WaitForm1.resx</Link>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="WaitForm1.resx">
       <DependentUpon>WaitForm1.cs</DependentUpon>
     </EmbeddedResource>
     <!-- CommonModule & MSSQL (Linked from RAZER_C/Modules) -->

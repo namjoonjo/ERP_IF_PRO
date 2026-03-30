@@ -3,6 +3,28 @@
 INTEROJO 사내 ERP 인터페이스 시스템.
 각 공정/영역별 업무 화면을 DLL 기반으로 동적 로딩하여 운영하는 Windows Forms 애플리케이션입니다.
 
+## 스크린샷
+
+### 로그인 화면
+일반 사용자 / Admin 선택 로그인. Admin은 비밀번호 입력 필요.
+
+![로그인](docs/screenshots/01_login.png)
+
+### 메인 화면
+상단 메뉴 바, 좌측 사이드 메뉴, 탭 기반 컨텐츠 영역으로 구성.
+
+![메인화면](docs/screenshots/02_main.png)
+
+### 메뉴 관리 (Admin)
+메뉴 CRUD, 권한(ADMIN_YN), 도킹, 패널, 비밀번호 설정 관리.
+
+![메뉴관리](docs/screenshots/03_menuset.png)
+
+### 단프라 스캔 관리
+단프라 번호 생성, 바코드 스캔, 파레트 번호 생성 및 라벨 출력.
+
+![단프라스캔](docs/screenshots/04_danpla_collector.png)
+
 ## 기술 스택
 
 - **Framework**: .NET Framework 4.8 (Windows Forms)

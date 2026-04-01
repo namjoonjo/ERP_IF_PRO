@@ -136,7 +136,3 @@ ERP_IF_PRO/
 - 각 프로젝트를 Release 빌드 후 생성된 DLL을 FTP 서버의 `/dlls/` 경로에 업로드
 - 메인 프로그램이 실행 시 FTP에서 최신 DLL을 다운로드하여 로컬 캐시에 저장
 
-## 브랜드
-
-- **Primary Blue**: #1B5091
-- **Orange Accent**: #F58220
